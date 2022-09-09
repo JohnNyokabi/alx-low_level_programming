@@ -17,7 +17,7 @@ int main(void)
 		{
 			for (z = y + 1; z <= '9'; z++)
 			{
-				if ( (y != x) != z)
+				if ((y != x) != z)
 				{
 					putchar(x);
 					putchar(y);
@@ -31,5 +31,5 @@ int main(void)
 		}
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
