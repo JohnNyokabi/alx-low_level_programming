@@ -10,6 +10,7 @@
 int main(void)
 {
 	int low, e, q;
+
 	e = 'e';
 	q = 'q';
 
