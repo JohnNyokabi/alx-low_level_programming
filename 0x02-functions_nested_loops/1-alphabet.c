@@ -1,9 +1,7 @@
 #include "main.h"
 
 /**
- * main - check the code
- *
- * Description: Print_alphabet defines the main function
+ * print_alphabet - Function that prints alphabets, in lower case
  *
  * Return: Always 0
  */
