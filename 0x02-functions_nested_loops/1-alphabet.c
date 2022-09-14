@@ -1,7 +1,9 @@
 #include "main.h"
 
 /**
- * main - check the code 
+ * main - check the code
+ *
+ * Description: Print_alphabet defines the main function
  *
  * Return: Always 0
  */
@@ -14,5 +16,4 @@ void print_alphabet(void)
 		_putchar(ch);
 	}
 	_putchar('\n');
-	return;
 }
