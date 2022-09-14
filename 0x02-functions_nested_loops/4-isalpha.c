@@ -1,4 +1,4 @@
-#include "min.h"
+#include "main.h"
 
 /**
  * _isalpha - function that checks if c character is alphabetic
