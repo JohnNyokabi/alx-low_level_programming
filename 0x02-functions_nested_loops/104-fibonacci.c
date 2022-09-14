@@ -25,7 +25,7 @@ int main(void)
 	q1_half0 = q1 / 10000000000;
 	q0_half1 = q0 % 10000000000;
 	q1_half1 = q1 % 10000000000;
-	for (i = 93; i < 99; i++)
+	for (i = 93; i < 98; i++)
 	{
 		half0 = q0_half0 + q1_half0;
 		half1 = q0_half1 + q1_half1;
