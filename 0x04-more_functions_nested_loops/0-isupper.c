@@ -5,7 +5,7 @@ include "main.h"
  * @c: input
  *
  * Return: 1 if c is uppercase.
- * Otherwis,e return 0.
+ * Otherwise, return 0.
  */
 int _isupper(int c);
 {
