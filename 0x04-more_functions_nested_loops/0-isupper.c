@@ -4,8 +4,8 @@ include "main.h"
  * _isupper - function that checks for an uppercase alphabet
  * @c : character to check
  *
- * Return: 1 if uppercase
- * otherwise, return 0
+ * Returns 1 if c is uppercase
+ * Returns 0 otherwise
  */
 int _isupper(int c);
 {
