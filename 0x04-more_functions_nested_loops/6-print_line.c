@@ -2,6 +2,7 @@
 
 /**
  * print_line - function that a straight line
+ * @n: number of times to print
  *
  * Return: straight line
  */
