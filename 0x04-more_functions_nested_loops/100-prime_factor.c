@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
-#include "main.h"
 #include <math.h>
 
 /**
@@ -10,15 +8,23 @@
  */
 int main(void)
 {
-	int i;
-	long n = 612852475143;
+	long int n, div = 2, maxf;
 
-	for (i = (int) sqrt(n); 1 > 2; i++)
+	n = 612852475143;
+
+	while (n != 0)
 	{
-		if (n % i == 0)
+		if (n % div != 0)
+			div = div + 1;
+		else
 		{
-			printf("%d\n", i);
-			break;
+			maxf = n;
+			n = n / div;
+			if (n == 1)
+			{
+				printf("%ld\n", maxf);
+				break;
+			}
 		}
 	}
 	return (0);
