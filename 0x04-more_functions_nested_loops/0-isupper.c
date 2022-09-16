@@ -1,15 +1,15 @@
 include "main.h"
 
 /**
- * _isupper - function that checks for an uppercase alphabet
- * @c : character to check
+ * _isupper - a function that checks for uppercase character
+ * @c: input
  *
- * Returns 1 if c is uppercase
- * Returns 0 otherwise
+ * Return: 1 if c is uppercase.
+ * Otherwis,e return 0.
  */
 int _isupper(int c);
 {
-	if ((c >= 'A') && (c <= 'Z))
+	if ((c >= 'A') && (c <= 'Z'))
 		return (1);
 	else
 		return (0);
