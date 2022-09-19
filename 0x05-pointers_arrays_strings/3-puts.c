@@ -11,7 +11,7 @@ void _puts(char *str)
 {
 	if (*str == '\0')
 		return;
-	_putchar("%c", *str);
+	_putchar("%s", *str);
 	_putchar('\n');
 	_puts(++str);
 }
