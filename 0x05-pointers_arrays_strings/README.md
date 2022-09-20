@@ -10,3 +10,5 @@ The directory contains:
 9. Function that prints half of a string, followed by a new line.
 10. Function that prints n elements of an array of integers, followed by a new line.
 11. Function that copies the string pointed to by src, including the terminating null byte (\0), to the buffer pointed to by dest.
+12. Function that convert a string to an integer while the number in the string can be preceeded by an infinit number of characters.
+13. Program that generates random valid passwords for the program 101-crackme.
