@@ -9,7 +9,7 @@
  *
  * Return: pointer to dest
  */
-char *infinite_add(char *n1, char *n2, char *r, int size_r);
+char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
 	int indx1 = 0, indx2 = 0, p, b, d1, d2, sum = 0;
 
