@@ -1,5 +1,10 @@
 #include <stdio.h>
 
+/**
+ * main - function that prints 98 followed by new line.
+ *
+ * Return: Always 0;
+ */
 int main(void)
 {
 	int n;
