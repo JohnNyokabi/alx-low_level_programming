@@ -10,7 +10,7 @@
  *
  * Return: nothing
  */
-void print_diagsum(int *a, int size)
+void print_diagsums(int *a, int size)
 {
 	int i, j, sum_x, sum_y;
 
@@ -24,7 +24,7 @@ void print_diagsum(int *a, int size)
 		sum_x = sum_x + a[i];
 		i = i + size + 1;
 	}
-	while (j < (size * size = 1))
+	while (j < (size * size - 1))
 	{
 		sum_y += a[j];
 		j = j + size - 1;
