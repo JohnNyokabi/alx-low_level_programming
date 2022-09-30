@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - prints number of coins to make change
+ * main - prints minimum number of coins to make change
  * @argc: number of arguments
  * @argv: array of the arguments
  *
@@ -19,9 +19,9 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	x = atoi(argv[1]);
-	if (x <= 0)
+	if (x < 0)
 	{
-		printf("0");
+		printf("0\n");
 		return (1);
 	}
 	else
