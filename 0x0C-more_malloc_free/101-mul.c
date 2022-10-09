@@ -31,8 +31,10 @@ int _strlen(char *s)
 	int i;
 
 	i = 0;
-	if (s[i] != '\0')
+	while (s[i] != '\0')
+	{
 		i++;
+	}
 	return (i);
 }
 
@@ -52,29 +54,23 @@ void error(void)
  *
  * Return: Always 0 (success)
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 	char *str1, *str2;
-	int l1, l2, l, i, c, num1, num2, *res,x = 0;
+	int l1, l2, l, i, c, num1, num2, *res, x = 0;
 
-	str1 = argv[1];
-	str2 = argv[2];
+	str1 = argv[1], str2 = argv[2];
 	if (argc != 3 || !_isdigit(str1) || !_isdigit(str2))
 		error();
 	l1 = _strlen(str1);
 	l2 = _strlen(str2);
 	l = l1 + l2 + 1;
-	res = malloc(l * sizeof(int));
+	res = malloc(sizeof(int) * l);
 	if (!res)
 		return (1);
-	i = 0;
-	while (i <= l1 + l2)
-	{
+	for (i = 0; i <= (l1 + l2); i++)
 		res[i] = 0;
-		i++;
-	}
-	l1 = l1 -1;
-	while (l1 >= 0)
+	for (l1 = l1 - 1; l1 >= 0; l1--)
 	{
 		num1 = str1[l1] - '0';
 		c = 0;
@@ -87,16 +83,13 @@ int main(int argc, char **argv)
 		}
 		if (c > 0)
 			res[l1 + l2 + 1] += c;
-		l1--;
 	}
-	i = 0;
-	while (i < l - 1)
+	for (i = 0; i < l - 1; i++)
 	{
 		if (res[i])
 			x = 1;
 		if (x)
 			_putchar(res[i] + '0');
-		i++;
 	}
 	if (!x)
 		_putchar('0');
