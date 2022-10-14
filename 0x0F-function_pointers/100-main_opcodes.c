@@ -1,5 +1,25 @@
-#include "3-calc.h"
+#include <stdio.h>
+#include <stdlib.h>
 
+/**
+ * _opcodes - prints opcodes
+ * @c: the address of main function
+ * @n: number of bytes to print
+ *
+ * Return: nothing
+ */
+void _opcodes(char *c, int n)
+{
+	int i;
+
+	for (i = 0; i < n; i++)
+	{
+		printf("%.2hhx", c[i]);
+		if (i < n - 1)
+			printf(" ");
+	}
+	printf("\n");
+}
 /**
  * main - prints the opcodes of its own main function
  * @argc: number of arguments
@@ -7,33 +27,21 @@
  *
  * Return: Always 0 (success)
  */
-int main(int argc, char *argv[])
+int main(int argc, char **argv[])
 {
-	int bytes, i;
-	int (*a)(int, char **) = main;
-	unsigned char opcode;
+	int i;
 
 	if (argc != 2)
 	{
 		printf("Error1\n");
 		exit(1);
 	}
-	bytes = atoi(argv[1]);
-	if (bytes < 0)
+	i = atoi(argv[1]);
+	if (i < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-	for (i = 0; i < bytes; i++)
-	{
-		opcode = *(unsigned char *)a;
-		printf("%.2x", opcode);
-
-		if (i == bytes - 1)
-			continue;
-		printf(" ");
-		a++;
-	}
-	printf("\n");
+	_opcodes((char *)&main, i);
 	return (0);
 }
